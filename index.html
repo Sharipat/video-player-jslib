@@ -3,6 +3,7 @@
 <head>
   <title>Видеоплеер</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
   <style type="text/css">
     .video-panel {
       background-color: black;
@@ -46,7 +47,7 @@
 <body>
 <div id="player" class="video-player">
   <div class="js-video-container video-container-class"></div>
-  <!-- Here can be placed player controls: play and volume buttons -->
+  <!-- There are player controls: play and volume buttons -->
   <div class="video-panel">
     <button class="js-play-button  video-panel-button"><i class="fa fa-play" aria-hidden="true"></i>
     </button>
@@ -63,8 +64,8 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
-<script src="player.js"></script>
 <script src="https://kit.fontawesome.com/742e584412.js" crossorigin="anonymous"></script>
+<script src="player.js"></script>
 <script type="text/javascript">
   createPlayer({elementId: 'player'});
 </script>
