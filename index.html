@@ -1,73 +1,73 @@
-  <!DOCTYPE html>
-  <html lang="ru">
-  <head>
-    <title>Видеоплеер</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/742e584412.js" crossorigin="anonymous"></script>
-    <style type="text/css">
-      button {
-        border: none;
-        cursor: pointer;
-        color: white;
-        background-color: transparent;
-      }
-
-      .js-video-container {
-        display: flex;
-        flex-direction: column;
-        flex: 1 1 auto;
-      }
-
-      .panel {
-        background-color: black;
-        display: flex;
-        flex: 0 0 auto;
-      }
-
-      button {
-        font-size: 150%;
-        line-height: 0.5;
-        margin: 8px;
-      }
-
-      #player {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
-        display: flex;
-        flex: 1 1 auto;
-        flex-direction: column;
-        width: 800px;
-        height: 600px;
-      }
-
-      .js-fullscreen-button {
-        display: flex;
-        margin-left: auto;
-      }
-    </style>
-  </head>
-  <body>
-  <div id="player">
-    <div class="js-video-container"></div>
-    <!-- Here can be placed player controls: play and volume buttons -->
-    <div class="panel">
-      <button class="js-play-button"><i class="fa fa-play" aria-hidden="true"></i></button>
-      <button class="js-pause-button"><i class="fa fa-pause" aria-hidden="true"></i></button>
-      <button class="js-mute-button"><i class="fa fa-volume-off" aria-hidden="true"></i></button>
-      <button class="js-volume-button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
-
-      <button class="js-fullscreen-button"><i class="fas fa-expand"></i></button>
-    </div>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Видеоплеер</title>
+  <meta charset="utf-8">
+  <style type="text/css">
+    .video-panel {
+      background-color: black;
+      display: flex;
+      flex: 0 0 auto;
+    }
 
 
+    .video-panel-button {
+      font-size: 150%;
+      line-height: 0.5;
+      margin: 8px;
+      border: none;
+      cursor: pointer;
+      color: white;
+      background-color: transparent;
+    }
+
+    .video-container-class {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+    }
+
+
+    .video-player {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+      display: flex;
+      flex: 1 1 auto;
+      flex-direction: column;
+      width: 800px;
+      height: 600px;
+    }
+
+    .video-fullscreen-button {
+      display: flex;
+      margin-left: auto;
+    }
+  </style>
+</head>
+<body>
+<div id="player" class="video-player">
+  <div class="js-video-container video-container-class"></div>
+  <!-- Here can be placed player controls: play and volume buttons -->
+  <div class="video-panel">
+    <button class="js-play-button  video-panel-button"><i class="fa fa-play" aria-hidden="true"></i>
+    </button>
+    <button class="js-pause-button video-panel-button"><i class="fa fa-pause" aria-hidden="true"></i>
+    </button>
+    <button class="js-mute-button video-panel-button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+    <button class="js-volume-button video-panel-button"><i class="fa fa-volume-off" aria-hidden="true"></i></button>
+
+    <button class="js-fullscreen-button video-panel-button video-fullscreen-button"><i class="fas fa-expand"></i>
+    </button>
   </div>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
-  <script src="player.js"></script>
 
-  <script type="text/javascript">
-    createPlayer({elementId: 'player'});
-  </script>
 
-  </body>
-  </html>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
+<script src="player.js"></script>
+<script src="https://kit.fontawesome.com/742e584412.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  createPlayer({elementId: 'player'});
+</script>
+
+</body>
+</html>
