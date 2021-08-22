@@ -5,49 +5,7 @@
     <title>Видеоплеер</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./static/css/fontawesome.min.css">
-    <style type="text/css">
-      .video-panel {
-        background-color: black;
-        display: flex;
-        flex: 0 0 auto;
-      }
-
-
-      .video-panel-button {
-        font-size: 150%;
-        line-height: 0.5;
-        margin: 8px;
-        border: none;
-        color: white;
-        cursor: pointer;
-      }
-
-      .video-panel-button {
-        background-color: transparent;
-      }
-
-
-      .video-container-class {
-        display: flex;
-        flex-direction: column;
-        flex: 1 1 auto;
-      }
-
-
-      .video-player {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
-        display: flex;
-        flex: 1 1 auto;
-        flex-direction: column;
-        width: 800px;
-        height: 600px;
-      }
-
-      .video-fullscreen-button {
-        display: flex;
-        margin-left: auto;
-      }
-    </style>
+    <link rel="stylesheet" href="./static/css/style.css">
   </head>
 
   <body>
@@ -66,18 +24,15 @@
         </button>
       </div>
 
-
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/742e584412.js" crossorigin="anonymous"></script>
     <script src="player.js"></script>
-    <script type="text/javascript">
+    <script>
       createPlayer({
         elementId: 'player'
       });
     </script>
-
   </body>
-
 </html>

@@ -1,0 +1,40 @@
+   .video-panel {
+        background-color: black;
+        display: flex;
+        flex: 0 0 auto;
+      }
+
+
+      .video-panel-button {
+        background-color: transparent;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+
+      .video-panel button{
+        font-size: 150%;
+        line-height: 0.5;
+        margin: 0.6em;
+      }
+       .video-panel-button.video-fullscreen-button {
+        display: flex;
+        margin-left: auto;
+      }
+
+      .video-container-class {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+      }
+
+
+      .video-player {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: column;
+        width: 800px;
+        height: 600px;
+      }
+
