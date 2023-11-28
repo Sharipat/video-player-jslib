@@ -11,7 +11,7 @@
 
 ## Примеры
 
-- Страница с видеоплеером на [Github Pages](https://shirlusha.github.io/video-player-jslib/)
+- Страница с видеоплеером на [Github Pages](https://sharipat.github.io/video-player-jslib/)
 
 ## Как подключить
 
