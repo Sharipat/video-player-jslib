@@ -1,22 +1,22 @@
-<!-- Плеер будет создан с задержкой, после того как загрузятся все ресурсы на странице. Для этого используется событие `DOMContentLoaded`. Благодаря этой особенности можно вызывать функцию `createPlayer` раньше, чем загрузятся все необходимые библиотеки: jQuery и Playable.
- -->
+<!-- The player will be created with a delay, after all resources on the page have loaded. The `DOMContentLoaded` event is used for this. Thanks to this feature, you can call the `createPlayer` function before all the necessary libraries are loaded: jQuery and Playable.
+  -->
 
-# Видеоплеер
+# Video player
 
-Кастомный видеоплеер, созданный в рамках учебного проекта.
+Custom video player created as part of an educational project.
 
 ![example](screenshots/screencast.gif)
 
-Построен на базе библиотеки [Playable](https://wix.github.io/playable/).
+Built on the basis of the [Playable](https://wix.github.io/playable/) library.
 
-## Примеры
+## Examples
 
-- Страница с видеоплеером на [Github Pages](https://sharipat.github.io/video-player-jslib/)
+- Video player page on [Github Pages](https://sharipat.github.io/video-player-jslib/)
 
-## Как подключить
+## How to connect
 
-Для работы с видеоплеером необходимо скачать репозиторий и запустить страницу index.html
+To work with the video player, you need to download the repository and launch the index.html page
 
-## Цели проекта
+## Project goals
 
-Код написан в учебных целях — это урок в курсе по Python и веб-разработке на сайте [Devman](https://dvmn.org).
+The code is written for educational purposes - this is a lesson in the course on Python and web development on the site [Devman](https://dvmn.org).
